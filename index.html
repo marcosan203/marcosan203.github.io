@@ -1,62 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Bem vindo</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Pessoal</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- agrupa o meu site para criar o efeito de cartão -->
+    <div class="container">
+        <!-- Topo do site -->
+         <!--lembre do role-->
+        <header>
+            <!-- menu -->
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li>|</li>
+                    <li><a href="#">Portifólio</a></li>
+                    <li>|</li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+            <hr class="line">
+        </header>
+        <main>
+            <!--foto-->
+            <section class="profile">
+                <img src="./img/foto.jpg" alt="Minha foto pessoal">
+            </section>
+             <!--Conteúdo-->
+             <section class="content">
+                <article>
+                    <!--Home-->
+                    <section class="pages">
+                        <h1>Home</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum iure consequatur, sequi eos officia tempore veniam, blanditiis sit esse corporis voluptatem? Eaque placeat excepturi nostrum tenetur necessitatibus possimus ab perspiciatis.</p>
+                    </section>
+                    <!--Portifólio-->
+                    <section class="pages">
+                        <h1>Portifólio</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum iure consequatur, sequi eos officia tempore veniam, blanditiis sit esse corporis voluptatem? Eaque placeat excepturi nostrum tenetur necessitatibus possimus ab perspiciatis.</p>
+                    </section>
+                    <!--Contato-->
+                    <section class="pages">
+                        <h1>Contato</h1>
+                       <form action="#" method="post">
+                             
+                            <div  class="box">
+                                <input type="text" id="frmnome" name="nome" placeholder="Nome" required/>
+                                <input type="email" id="frmemail" name="email" placeholder="E-mail" required/>
+                            </div>
 
-         <!--Google Fonts-->
-        <link 
-            href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" 
-            rel="stylesheet">
-
-        <!--Font Awesome-->
-        <link 
-            rel="stylesheet" 
-            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" 
-            crossorigin="anonymous">
-
-        <!--Meu estilo-->
-        <link rel="stylesheet" href="./css/style.css">
-    </head>
-    <body>
-        <main class="container">
-            <article>
-                <section class="foto-social">
-                    <div class="foto">
-                        <img src="./img/foto.jpg" alt="Minha foto" title="colocar meu nome">
-                    </div>
-                    <ul class="social">
-                        <li>  
-                            <a href="https://www.linkedin.com/in/marcos-aurelio-b8700233" target="_blank">
-                                <span class="fab fa-linkedin-in"></span>
-                            </a>
-                        </li>
-
-                        <li>  
-                            <a href="#" target="_blank">
-		                        <span class="fab fa-facebook-f"></span>
-                            </a>
-                        </li>
-
-                        <li>  
-                            <a href="#" target="_blank">
-                                <span class="fab fa-twitter"></span>
-                            </a>
-                        </li>
-                    </ul>
-                </section>
-                <section class="texto">
-                    <h1>Marcos Aurélio do Nascimento</h1>
-                    <p>
-                       Formado em Sistemas de Informação pela Uniesp e atualmente estou concluindo um curso de 
-					   Desenvolvedor Full Stack no Senac. Minha paixão pela tecnologia me impulsiona a aprender constantemente e a aprimorar 
-					   minhas habilidades. Estou sempre em busca de novas oportunidades para aplicar meu conhecimento em projetos desafiadores.
-                    </p>
-                </section>
-            </article>
+                            <div class="box">   
+                                <input type="tel" id="frmtelefone" name="telefone" placeholder="Telefone" required/>
+                                <input type="text" id="frmassunto" name="assunto" placeholder="Assunto" required/>
+                            </div>    
+                          
+                            <textarea id="frmmensagem" cols="20" rows="5" name="mensagem" placeholder="Mensagem" required></textarea>
+                            <input  type="submit" id="btnEnviar" value="Enviar mensagem">
+                        </form>
+                    </section>
+                </article>
+            </section>
         </main>
-    </body>
+    </div>
+</body>
 </html>
