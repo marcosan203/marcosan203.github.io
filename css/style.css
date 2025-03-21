@@ -285,4 +285,17 @@ form textarea {
         gap: 20px;
         justify-content: center;
     }
+
+    .tecnoloigas{
+        display: flex;
+        justify-content: center;
+        gap: 35px;
+        padding-top: 35px;
+        width: 100%;
+    
+    }
+    .tecnologia-area-icon{
+        display: flex;
+        gap: 10px;   
+    }
 }
